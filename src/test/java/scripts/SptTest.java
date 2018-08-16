@@ -53,14 +53,11 @@ protected ReportManager report;
 		report.writeLog("Login is succssfull");
 		report.passStep("Login scenario is completed");
 	  }catch(Exception e) {
-		  e.printStackTrace();
-		  report.writeFailure("DPS application environment is down");
-		  report.finish();
-		  
+	    e.printStackTrace();
+	    report.writeFailure("DPS application environment is down");
+	    report.finish();
 	  }
   }
-  
-  
   
   @BeforeClass
   public void beforeClass() {

@@ -84,3 +84,5 @@ protected ReportManager report;
  	}
 
 }
+
+//mvn test -Dcustomproperty=https://spitfireoffice.dpscloud.com/
