@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9727" started-at="2018-08-16T09:33:19Z" finished-at="2018-08-16T09:33:29Z">
+    <groups>
+      <group name="smoke">
+        <method signature="GoogleTest.search()[pri:0, instance:scripts.GoogleTest@39aeed2f]" name="search" class="scripts.GoogleTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="9727" started-at="2018-08-16T09:33:19Z" finished-at="2018-08-16T09:33:29Z">
+      <class name="scripts.GoogleTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:scripts.GoogleTest@39aeed2f]" name="beforeClass" is-config="true" duration-ms="6085" started-at="2018-08-16T15:03:19Z" finished-at="2018-08-16T15:03:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="search()[pri:0, instance:scripts.GoogleTest@39aeed2f]" name="search" duration-ms="1227" started-at="2018-08-16T15:03:26Z" finished-at="2018-08-16T15:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="page()[pri:0, instance:scripts.GoogleTest@39aeed2f]" name="page" duration-ms="76" started-at="2018-08-16T15:03:27Z" finished-at="2018-08-16T15:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- page -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:scripts.GoogleTest@39aeed2f]" name="afterClass" is-config="true" duration-ms="2336" started-at="2018-08-16T15:03:27Z" finished-at="2018-08-16T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- scripts.GoogleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
