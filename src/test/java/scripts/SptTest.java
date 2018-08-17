@@ -3,6 +3,7 @@ package scripts;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ReportManager;
 
 import org.testng.annotations.BeforeTest;
@@ -62,7 +63,8 @@ protected ReportManager report;
   @BeforeClass
   public void beforeClass() {
 	  //System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
-	  ChromeDriverManager.getInstance().setup();
+	  //ChromeDriverManager.getInstance().setup();
+	  WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
 	  String BaseURL= System.getProperty("customproperty");
 	  driver.get(BaseURL);
