@@ -14,6 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -66,6 +67,10 @@ protected ReportManager report;
 	  //ChromeDriverManager.getInstance().setup();
 	  
 	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+      ChromeOptions chromeOptions = new ChromeOptions();
+      chromeOptions.addArguments("--headless");
+      chromeOptions.addArguments("--no-sandbox");
+	  
 	  //WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
 	  
