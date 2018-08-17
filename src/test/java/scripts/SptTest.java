@@ -82,3 +82,5 @@ protected ReportManager report;
  	}
 
 }
+
+//test -Dcustomproperty=https://spttest2.azurewebsites.net/
