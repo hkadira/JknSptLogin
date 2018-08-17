@@ -62,10 +62,12 @@ protected ReportManager report;
   
   @BeforeClass
   public void beforeClass() {
-	  //System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
 	  //ChromeDriverManager.getInstance().setup();
-	  WebDriverManager.chromedriver().setup();
+	  
+	  //WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
+	  
 	  String BaseURL= System.getProperty("customproperty");
 	  driver.get(BaseURL);
   }
