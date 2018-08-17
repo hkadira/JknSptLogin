@@ -65,8 +65,8 @@ protected ReportManager report;
 	  //System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
 	  //ChromeDriverManager.getInstance().setup();
 	  
-	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	  //WebDriverManager.chromedriver().setup();
+	  //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	  WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
 	  
 	  String BaseURL= System.getProperty("customproperty");
