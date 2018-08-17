@@ -71,7 +71,7 @@ protected ReportManager report;
       chromeOptions.addArguments("--headless");
       chromeOptions.addArguments("--no-sandbox");
 
-      WebDriver driver = new ChromeDriver(chromeOptions);
+      driver = new ChromeDriver(chromeOptions);
 	  
 	  //WebDriverManager.chromedriver().setup();
 	  //driver = new ChromeDriver();
