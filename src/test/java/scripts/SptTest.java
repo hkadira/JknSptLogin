@@ -70,9 +70,11 @@ protected ReportManager report;
       ChromeOptions chromeOptions = new ChromeOptions();
       chromeOptions.addArguments("--headless");
       chromeOptions.addArguments("--no-sandbox");
+
+      WebDriver driver = new ChromeDriver(chromeOptions);
 	  
 	  //WebDriverManager.chromedriver().setup();
-	  driver = new ChromeDriver();
+	  //driver = new ChromeDriver();
 	  
 	  String BaseURL= System.getProperty("customproperty");
 	  driver.get(BaseURL);
