@@ -64,17 +64,17 @@ protected ReportManager report;
   @BeforeClass
   public void beforeClass() {
 	  //System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
-	  //ChromeDriverManager.getInstance().setup();
+	  ChromeDriverManager.getInstance().setup();
 	  
-	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	  /*System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
       ChromeOptions chromeOptions = new ChromeOptions();
       chromeOptions.addArguments("--headless");
-      chromeOptions.addArguments("--no-sandbox");
+      chromeOptions.addArguments("--no-sandbox");*/
 
-      driver = new ChromeDriver(chromeOptions);
+      //driver = new ChromeDriver(chromeOptions);
 	  
 	  //WebDriverManager.chromedriver().setup();
-	  //driver = new ChromeDriver();
+	  driver = new ChromeDriver();
 	  
 	  String BaseURL= System.getProperty("customproperty");
 	  driver.get(BaseURL);
