@@ -18,13 +18,13 @@ public class ReportManager {
 	public ReportManager(String reportName, String suiteName){
 		createReportFolder();
 		
-		//--Report save : Location folder
+		//--Report save : Local Report folder
 		//extentReportFile = System.getProperty("user.dir") + "\\Reports\\"+getSubFolderName()+"\\" +reportName+".html";
 	    //extentReportImage = System.getProperty("user.dir") + "\\extentReportImage.png";
 	    //-- End
 	    
 	    //---- Reports save Shared location
-	    String extentReportFile = "U:\\QA\\Automation\\Reports\\"+getSubFolderName()+"\\" +reportName+".html";
+	    String extentReportFile = "C:\\QA\\Automation\\Reports\\"+getSubFolderName()+"\\" +reportName+".html";
 	    //- End
 	    
 		// Create object of extent report and specify the report file path.
